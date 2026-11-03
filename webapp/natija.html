@@ -59,7 +59,7 @@ canvas#cf{position:fixed;inset:0;pointer-events:none;z-index:9}
 <script>
 (() => {
 'use strict';
-const tg=window.Telegram&&window.Telegram.WebApp, inTG=!!(tg&&tg.initData);
+const tg=window.Telegram&&window.Telegram.WebApp, inTG=!!(tg && tg.platform && tg.platform!=='unknown');
 if(tg){try{tg.ready();tg.expand();tg.setHeaderColor&&tg.setHeaderColor('#F4F9FD');}catch(e){}}
 const Q=new URLSearchParams(location.search);
 const PROD=(Q.get('p')||'vitaway').toLowerCase();
