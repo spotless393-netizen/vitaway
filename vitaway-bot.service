@@ -1,0 +1,12 @@
+[Unit]
+Description=Vitaway natija bot
+After=network.target
+
+[Service]
+WorkingDirectory=/opt/vitaway_bot
+ExecStart=/usr/bin/python3 /opt/vitaway_bot/bot.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
