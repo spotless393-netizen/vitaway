@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
-<title>20 kunlik natija</title>
+<title>Farzandimiz natijasi</title>
 <script src="https://telegram.org/js/telegram-web-app.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -102,8 +102,8 @@ const A={t:'natija',v:1,p:PROD,who:'',child:'',age:'',sc:{},text:'',stars:0,rec:
 const steps=[];
 steps.push({id:'hi', r:()=>`
   <img src="${LOGO_SRC}" alt="Vitaway: Naturally for kids" style="display:block;width:62%;max-width:240px;margin:0 auto 22px;animation:in .7s cubic-bezier(.2,1.5,.4,1) both">
-  <div class="badge"><div><b>20</b><small>KUN</small></div></div>
-  <h2>20 kun ortda qoldi! 🎉</h2>
+  <div class="badge"><div><b>💚</b><small>NATIJA</small></div></div>
+  <h2>Kichkintoyimiz qalay? 🎉</h2>
   <p class="sub">Farzandingizdagi o'zgarishlar bilan bo'lishing. Bor-yo'g'i 1 daqiqa vaqt oladi.</p>
   <button class="btn" data-next>Boshladik 🚀</button>`});
 steps.push({id:'who', r:()=>`
@@ -118,7 +118,7 @@ steps.push({id:'child', r:()=>`
 areas.forEach(k=>{
   const a=AREA[k];
   steps.push({id:'sc_'+k, r:()=>`
-    <div class="emo">${a[0]}</div><h2>${a[1]}</h2><p class="sub">${a[2]||'20 kun oldingi holatga nisbatan'}</p>
+    <div class="emo">${a[0]}</div><h2>${a[1]}</h2><p class="sub">${a[2]||'Vitaway ichishdan oldingi holatga nisbatan'}</p>
     <div class="opts">${SCALE.map((o,i)=>`<button class="opt ${A.sc[k]===o[2]?'sel':''}" style="animation-delay:${i*.06}s" data-sc="${k}" data-v="${o[2]}"><span>${o[0]}</span>${o[1]}</button>`).join('')}</div>`});
 });
 steps.push({id:'text', r:()=>`
